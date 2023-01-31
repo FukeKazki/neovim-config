@@ -16,3 +16,9 @@ git clone git@github.com:FukeKazki/neovim-config.git ~/.config/nvim
 nvimきどう
 :PackerSync
 ```
+
+lspとかの設定 (この辺も設定ファイルから自動で入れてほしい)
+```
+LspInstall lua
+TSInstall lua
+```
