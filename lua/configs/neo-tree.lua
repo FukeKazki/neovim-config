@@ -43,6 +43,11 @@ require("neo-tree").setup(astronvim.user_plugin_opts("plugins.neo-tree", {
     },
   },
   filesystem = {
+    -- 隠しファイルを表示するかの設定
+    filtered_items = {
+      hide_dotfiles = false,
+      visible = true,
+    },
     follow_current_file = true,
     hijack_netrw_behavior = "open_current",
     use_libuv_file_watcher = true,
