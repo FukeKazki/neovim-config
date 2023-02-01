@@ -224,6 +224,7 @@ local config = {
   -- Configure plugins
   plugins = {
     init = {
+      { "iloginow/vim-stylus" },
       -- You can disable default plugins as follows:
       ["goolord/alpha-nvim"] = { disable = true },
       ["declancm/cinnamon.nvim"] = { disable = true },
