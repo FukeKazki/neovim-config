@@ -482,6 +482,10 @@ local config = {
       set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%,space:･
       set title
       colorscheme ayu-mirage
+      augroup Tmux
+        autocmd! FocusGained * hi Normal guifg=#cbccc6 guibg=#1f2733
+        autocmd! FocusLost * hi Normal guifg=#cbccc6 guibg=#1b222d
+      augroup END
     ]])
   end,
 }
