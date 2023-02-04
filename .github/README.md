@@ -1,3 +1,6 @@
+`ghq get git@github.com:FukeKazki/neovim-config.git`
+シンボリックリンクを貼る
+`ln -s ~/Develop/github.com/FukeKazki/neovim-config/ ./nvim`
 # 自分用セットアップ手順
 ```
 brew install alacritty
