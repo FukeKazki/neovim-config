@@ -26,8 +26,7 @@ local config = {
   },
 
   -- Set colorscheme to use
-  -- colorscheme = "ayu-mirage",
-  colorscheme = "default_theme",
+  colorscheme = "NeoSolarized",
 
   -- Add highlight groups in any theme
   highlights = {
@@ -261,26 +260,9 @@ local config = {
           require("neogit").setup()
         end,
       },
-      -- {
-      --   "Shatur/neovim-ayu",
-      --   config = function()
-      --     local colors = require("ayu.colors")
-      --     colors.generate(true) -- Pass `true` to enable mirage
-      --     require("ayu").setup({
-      --       overrides = function()
-      --         return {
-      --           VertSplit = { fg = "#171d26", bg = "#171d26" },
-      --           StatusLine = { fg = colors.fg, bg = "#171d26" },
-      --           StatusLineNC = { fg = colors.fg_idle, bg = "#171d26" },
-      --           Normal = { fg = colors.fg, bg = "#1f2733" },
-      --           NormalNC = { fg = colors.fg, bg = "#1b222d" },
-      --           SignColumn = {},
-      --           CursorLine = { bg = "#1F252F" },
-      --         }
-      --       end,
-      --     })
-      --   end,
-      -- },
+      -- カラースキームを導入
+      -- https://github.com/overcache/NeoSolarized
+      { "overcache/NeoSolarized" },
       { "mocaffy/vim-tpipeline" },
       {
         "tanvirtin/vgit.nvim",
@@ -436,7 +418,6 @@ local config = {
       set list
       set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%,space:･
       set title
-      " colorscheme ayu-mirage
       augroup Tmux
         autocmd! FocusGained * hi Normal guifg=#cbccc6 guibg=#1f2733
         autocmd! FocusLost * hi Normal guifg=#cbccc6 guibg=#1b222d
