@@ -212,6 +212,8 @@ local config = {
       ["<leader>bt"] = { "<cmd>BufferLineSortByTabs<cr>", desc = "Sort by tabs" },
       ["<Leader>z"] = { "<Cmd>WindowsMaximize<CR>", desc = "Maximize window" },
       ["<Leader>gn"] = { "<Cmd>Neogit<CR>", desc = "Neogit" },
+      -- 前回の検索結果を開く
+      ["<Leader>fr"] = { "<Cmd>Telescope resume<CR>", desc = "resume" },
       -- quick save
       -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     },
@@ -323,6 +325,16 @@ local config = {
     },
     ["mason-nvim-dap"] = { -- overrides `require("mason-nvim-dap").setup(...)`
       -- ensure_installed = { "python" },
+    },
+    ["telescope"] = {
+        pickers = {
+            find_files = {
+                theme = "ivy",
+            },
+            live_grep = {
+              theme = "ivy",
+            },
+        }
     },
   },
 
