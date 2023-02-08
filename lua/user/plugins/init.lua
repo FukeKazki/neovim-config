@@ -46,4 +46,9 @@ return {
       require("windows").setup()
     end,
   },
+  {
+    -- mergeEditor用
+    "sindrets/diffview.nvim",
+    requires = 'nvim-lua/plenary.nvim',
+  }
 }
