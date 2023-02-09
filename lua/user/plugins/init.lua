@@ -50,5 +50,9 @@ return {
     -- mergeEditor用
     "sindrets/diffview.nvim",
     requires = 'nvim-lua/plenary.nvim',
+  },
+  {
+    -- 特定の文字間をいじったりするやつ
+    "tpope/vim-surround"
   }
 }
