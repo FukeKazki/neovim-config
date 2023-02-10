@@ -44,6 +44,14 @@ return {
 
   -- Add overrides for LSP server settings, the keys are the name of the server
   ["server-settings"] = {
+    -- denoとtsserverが干渉しないように
+    -- https://astronvim.github.io/Recipes/advanced_lsp#deno-deno-nvim
+    denols = {
+      root_dir = require("lspconfig.util").root_pattern("deno.json", "deno.jsonc"),
+    },
+    tsserver = {
+      root_dir = require("lspconfig.util").root_pattern("package.json"),
+    },
     -- example for addings schemas to yamlls
     -- yamlls = { -- override table for require("lspconfig").yamlls.setup({...})
     --   settings = {
