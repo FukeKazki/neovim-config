@@ -3,20 +3,21 @@
 -- anything that doesn't fit in the normal config locations above can go here
 return function()
   -- Set up custom filetypes
-  -- vim.filetype.add {
-  --   extension = {
-  --     foo = "fooscript",
-  --   },
-  --   filename = {
-  --     ["Foofile"] = "fooscript",
-  --   },
-  --   pattern = {
-  --     ["~/%.config/foo/.*"] = "fooscript",
-  --   },
-  -- }
+  vim.filetype.add {
+      extension = {
+          mdx = "markdown",
+      },
+      -- filename = {
+      --   ["Foofile"] = "fooscript",
+      -- },
+      -- pattern = {
+      --   ["~/%.config/foo/.*"] = "fooscript",
+      -- },
+  }
 
   -- 自作プラグインのパスを通す
-  vim.opt.runtimepath:prepend { "~/.config/nvim/lua/myplugins/dps-helloworld/" }
+  -- vim.opt.runtimepath:prepend { "~/.config/nvim/lua/myplugins/dps-helloworld/" }
+  -- vim.opt.runtimepath:prepend { "~/Develop/github.com/fukke/denops-slack.vim/" }
 
   -- Normal と NormalNC のハイライト設定を変数に代入
   local color_normal = vim.api.nvim_get_hl_by_name("Normal", true)
