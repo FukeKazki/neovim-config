@@ -21,6 +21,8 @@ return {
         heirline_bufferline = false, -- enable new heirline based bufferline (requires :PackerSync after changing)
         translate_ui = '',
         -- ["denops#debug"] = 1, -- プラグイン開発中だけONにする
+        slack_api_token = os.getenv("SLACK_API_TOKEN"),
+        slack_channel = 'C027WA7N9T2'
     },
 }
 
