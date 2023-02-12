@@ -7,6 +7,19 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = false, -- sets vim.opt.wrap
+        -- タイトルの変更を有効にする
+        title = true,
+        list = true,
+        -- 不可視な文字の設定
+        listchars = {
+            tab = '»-',
+            trail = '-',
+            eol = '↲',
+            extends = '»',
+            precedes = '«',
+            nbsp = '%',
+            space = '･',
+        }
     },
     g = {
         -- let g:みたいなのはここにかく！

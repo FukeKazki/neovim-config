@@ -15,27 +15,6 @@ return function()
   --   },
   -- }
 
-  -- 不可視な文字の設定
-  -- vim.cmd([[
-  --   augroup Tmux
-  --     autocmd! FocusGained * hi Normal guifg=#cbccc6 guibg=#1f2733
-  --     autocmd! FocusLost * hi Normal guifg=#cbccc6 guibg=#1b222d
-  --   augroup END
-  -- ]])
-  -- タイトルの変更を有効にする
-  vim.opt.title = true
-
-  -- 不可視な文字の設定
-  vim.opt.list = true
-  vim.opt.listchars = {
-      tab = '»-',
-      trail = '-',
-      eol = '↲',
-      extends = '»',
-      precedes = '«',
-      nbsp = '%',
-      space = '･',
-  }
   -- 自作プラグインのパスを通す
   vim.opt.runtimepath:prepend { "~/.config/nvim/lua/myplugins/dps-helloworld/" }
 
