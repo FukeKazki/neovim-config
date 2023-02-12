@@ -62,6 +62,10 @@ return {
     {
         -- 翻訳するプラグイン
         "skanehira/denops-translate.vim",
+    },
+    {
+        -- slackに投稿するプラグイン
+        "FukeKazki/denops-slack.vim",
     }
     -- {
     --       "jose-elias-alvarez/typescript.nvim",
