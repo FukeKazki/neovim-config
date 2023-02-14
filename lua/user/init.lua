@@ -53,6 +53,18 @@ return {
                 root_dir = require("lspconfig.util").root_pattern("package.json"),
                 single_file_support = false
             },
+            jsonls = {
+                settings = {
+                    json = {
+                        schemas = {
+                            {
+                                fileMatch = { 'deno.json', 'deno.jsonc' },
+                                url = "https://deno.land/x/deno/cli/schemas/config-file.v1.json"
+                            }
+                        }
+                    }
+                }
+            },
             -- example for addings schemas to yamlls
             -- yamlls = { -- override table for require("lspconfig").yamlls.setup({...})
             --   settings = {
