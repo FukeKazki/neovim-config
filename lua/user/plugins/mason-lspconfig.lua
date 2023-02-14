@@ -1,3 +1,3 @@
 return {
-  ensure_installed = { "sumneko_lua", "denols", "tsserver" },
+    ensure_installed = { "sumneko_lua", "denols", "tsserver", "jsonls" },
 }
