@@ -27,7 +27,7 @@ return {
     -- カラースキームを導入
     -- https://github.com/overcache/NeoSolarized
     { "overcache/NeoSolarized" },
-    { "mocaffy/vim-tpipeline" },
+    -- { "mocaffy/vim-tpipeline" },
     {
         "tanvirtin/vgit.nvim",
         requires = {
@@ -64,8 +64,16 @@ return {
         "skanehira/denops-translate.vim",
     },
     {
+        -- 遷移を楽にするプラグイン
+        "skanehira/jumpcursor.vim"
+    },
+    {
         -- slackに投稿するプラグイン
         "FukeKazki/denops-slack.vim",
+    },
+    {
+        -- carbonをつかって画像化するプラグイン
+        "kristijanhusak/vim-carbon-now-sh"
     }
     -- {
     --       "jose-elias-alvarez/typescript.nvim",
